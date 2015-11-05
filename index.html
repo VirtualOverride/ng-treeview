@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular Treeview Example</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/angular-treeview/css/angular.treeview.css" />
+</head>
+<body ng-app="app">
+
+	<div ng-controller="TreeviewController as tv">
+	
+		<div style="display:table-row; width:500px;">
+		  <div style="display:table-cell; width:250px;">
+		      <div style="margin:10px 5px 30px 5px; padding:10px; background-color:#EEEEEE; border-radius:5px; font:12px Tahoma;">
+		          <span><b>First Tree's Selected Node</b> : <br>{{tree01.currentNode.roleName}}</span>
+		      </div>
+		  </div>
+		</div>
+
+		<div style="display:table-row; width:500px;">
+		  <div style="display:table-cell; width:250px;">
+		      <div
+		          data-angular-treeview="true"
+		          data-tree-id="tree01"
+		          data-tree-model="tv.tree_data"
+		          data-node-id="roleId"
+		          data-node-label="roleName"
+		          data-node-children="children" >
+		      </div>
+		  </div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/angular-treeview/angular.treeview.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

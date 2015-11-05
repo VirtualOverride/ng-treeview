@@ -1,0 +1,19 @@
+{
+  "name": "treeview",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-treeview": "*",
+    "angular": "~1.4.7"
+  }
+}
